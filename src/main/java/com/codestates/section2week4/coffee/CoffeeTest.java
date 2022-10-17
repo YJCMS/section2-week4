@@ -7,7 +7,7 @@ public class CoffeeTest {
         DependencyConfig dependencyConfig = new DependencyConfig();
         CoffeeService coffeeService = dependencyConfig.coffeeService();
 
-        Coffee coffee = new Coffee(0L, "플랫 화이트", "flat white", 5000);
+        Coffee coffee = new Coffee(0L, "플랫 화이트", "flat white", 4000);
         coffeeService.createCoffee(coffee);
 
         if(coffeeService.getCoffee(0L).getKorName().equals(coffee.getKorName())) {
